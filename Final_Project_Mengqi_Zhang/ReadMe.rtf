@@ -3,25 +3,82 @@
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;\csgray\c100000;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid501\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid601\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs28 \cf0 ReadMe\
-Hi,\
+\f0\b\fs28 \cf0 ReadMe
+\b0 \
 \
-here is a brief guide through my final project.\
+Hi Breman,\
+Let me briefly go through my final project with you.\
 \
 I. Class definitions and the corresponding files\
 A. TradeBookService, PositionService & RiskService\
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls1\ilvl0\cf0 {\listtext	\'95	}BondTradeBookingService and BondTradeBookingConnector are defined in \'93tradebookingservice.hpp\'94\
+\ls1\ilvl0\cf0 {\listtext	\'95	}BondTradeBookingService and BondTradeBookingConnector are defined in \'93tradebookingservice.hpp\'94.\
 {\listtext	\'95	}BondPositionService is defined in \'93positionservice.hpp\'94. BondTradeServiceListener is defined in \'93BondTradeServiceListener.hpp\'94. There is no connector class of the position service since data will flow from BondTradeBookingService through listener.\
 {\listtext	\'95	}BondRiskService is defined in \'93riskservice.hpp\'94. Data from BondPositionService flows through BondPositionServiceListener in \'93BondPositionServiceListener.hpp\'94 to the risk service.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
+Note:\
+\
 B. PricingService & StreamingService\
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls2\ilvl0\cf0 {\listtext	\'95	}\
+\ls2\ilvl0\cf0 {\listtext	\'95	}BondPricingService and BondPricingConnector are defined in \'93pricingservice.hpp\'94.\
+{\listtext	\'95	}BondStreamingService is defined in \'93streamingservice.hpp\'94. BondAlgoStreamingService is defined in \'93BondAlgoStreamingService.hpp\'94. They are connected with pricing service through BondPricingListener defined in \'93BondPricingListener.hpp\'94.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+C. MarketDataService & ExecutionService\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\'95	}BondMarketDataService and BondMarketDataConnector are defined in \'93marketdataservice.hpp\'94.\
+{\listtext	\'95	}BondExecutionService is defined in \'93executionservice.hpp\'94. BondAlgoExecutionService is defined in \'93AlgoExecutionService.hpp\'94. They are connected with market data service through MarketDataListener defined in \'93BondMarketDataListener.hpp\'94.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+D. InquiryService\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\'95	}BondInquiryService and BondInquiryServiceConnector are defined in \'93inquiryservice.hpp\'94.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+E. HistoricalDataService\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	\'95	}BondHistoricalPositionDataConnector and BondHistoricalPositionDataService are defined in \'93historicaldataservice.hpp\'94. PositionDataListener defined in \'93PositionDataListener.hpp\'94 connects historical position data service to position service.\
+{\listtext	\'95	}BondHistoricalRiskDataConnector and BondHistoricalRiskDataService are defined in \'93historicaldataservice.hpp\'94. RiskListener defined in \'93RiskListener.hpp\'94 connects historical risk data to risk service.\
+{\listtext	\'95	}BondHistoricalExecutionDataConnector and BondHistoricalExecutionDataService are defined in \'93historicaldataservice.hpp\'94. ExecutionListener defined in \'93ExecutionListener.hpp\'94 connects historical execution data to execution service.\
+{\listtext	\'95	}BondHistoricalStreamingDataConnector and BondHistoricalStreamingDataService are defined in \'93historicaldataservice.hpp\'94. StreamingListener defined in \'93StreamingListener.hpp\'94 connects historical streaming data to streaming service.\
+{\listtext	\'95	}BondHistoricalInquiryDataConnector and BondHistoricalInquiryDataService are defined in \'93historicaldataservice.hpp\'94. InquiryListener defined in \'93InquiryListener.hpp\'94 connects historical inquiry data to inquiry service.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+II. Input files:\
+trades.txt\
+marketdata.txt\
+prices.txt\
+inquiries.txt\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls6\ilvl0\cf0 {\listtext	\'95	}The input files are generated by using code from my fellow classmates. \
+{\listtext	\'95	}marketdata.txt is simplified. However, since it doesn\'92t allowed for orders with same depth, the AggregateDepth function is left undefined.\
+{\listtext	\'95	}All the ReadFile functions are modified to correspond to the files generated.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+III. Output files:\
+allinquires.txt\
+execution.txt\
+position.txt\
+risk.txt\
+streaming.txt\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls7\ilvl0\cf0 {\listtext	\'95	}All the output files can be found in the folder \'93Output_Files\'94.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Since I feel very uncomfortable sitting and sleeping during the last few weeks of this semester, I received a lot of help from my fellow classmates on understanding and completing this final project. I really appreciate that. And I also would like to thank you for your support and kindness!:)\
+\
+Best wishes,\
+Kiki (Mengqi Zhang)\
 }
