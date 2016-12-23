@@ -1,7 +1,8 @@
 ReadMe
 
 Hi Breman,
-Let me briefly go through my final project with you.
+
+let me briefly go through my final project with you.
 
 I. Class definitions and the corresponding files
 A. TradeBookService, PositionService & RiskService
