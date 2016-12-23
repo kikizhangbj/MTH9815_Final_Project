@@ -23,8 +23,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D682136B1E07709000FC9681 /* BondPositionServiceListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondPositionServiceListener.hpp; sourceTree = "<group>"; };
+		D682136C1E0B3EF500FC9681 /* AlgoExecutionService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlgoExecutionService.hpp; sourceTree = "<group>"; };
+		D682136E1E0B722D00FC9681 /* BondMarketDataListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondMarketDataListener.hpp; sourceTree = "<group>"; };
+		D68213701E0B7F2900FC9681 /* BondAlgoStreamingService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondAlgoStreamingService.hpp; sourceTree = "<group>"; };
+		D68213711E0B870B00FC9681 /* BondPricingListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondPricingListener.hpp; sourceTree = "<group>"; };
+		D68213721E0BB7E700FC9681 /* ExecutionListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExecutionListener.hpp; sourceTree = "<group>"; };
+		D68213731E0BB92E00FC9681 /* InquiryListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InquiryListener.hpp; sourceTree = "<group>"; };
+		D68213751E0BBB1300FC9681 /* PositionDataListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PositionDataListener.hpp; sourceTree = "<group>"; };
+		D68213761E0BBCAC00FC9681 /* RiskListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RiskListener.hpp; sourceTree = "<group>"; };
+		D68213771E0BBDBD00FC9681 /* StreamingListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StreamingListener.hpp; sourceTree = "<group>"; };
+		D6AACB0F1E060E98008B9432 /* BondTradeServiceListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BondTradeServiceListener.hpp; sourceTree = "<group>"; };
 		D6E6D0531DFB0FE600645C01 /* Final_Project_Mengqi_Zhang */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Final_Project_Mengqi_Zhang; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6D0561DFB0FE600645C01 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D6E6D06A1DFB148C00645C01 /* executionservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = executionservice.hpp; sourceTree = "<group>"; };
+		D6E6D06B1DFB148C00645C01 /* historicaldataservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = historicaldataservice.hpp; sourceTree = "<group>"; };
+		D6E6D06C1DFB148C00645C01 /* inquiryservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = inquiryservice.hpp; sourceTree = "<group>"; };
+		D6E6D06D1DFB148C00645C01 /* marketdataservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = marketdataservice.hpp; sourceTree = "<group>"; };
+		D6E6D06E1DFB148C00645C01 /* positionservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = positionservice.hpp; sourceTree = "<group>"; };
+		D6E6D06F1DFB148C00645C01 /* pricingservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pricingservice.hpp; sourceTree = "<group>"; };
+		D6E6D0701DFB148C00645C01 /* products.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = products.hpp; sourceTree = "<group>"; };
+		D6E6D0711DFB148C00645C01 /* riskservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = riskservice.hpp; sourceTree = "<group>"; };
+		D6E6D0721DFB148C00645C01 /* soa.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = soa.hpp; sourceTree = "<group>"; };
+		D6E6D0731DFB148C00645C01 /* streamingservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = streamingservice.hpp; sourceTree = "<group>"; };
+		D6E6D0741DFB148C00645C01 /* tradebookingservice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tradebookingservice.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +79,29 @@
 		D6E6D0551DFB0FE600645C01 /* Final_Project_Mengqi_Zhang */ = {
 			isa = PBXGroup;
 			children = (
+				D6E6D06A1DFB148C00645C01 /* executionservice.hpp */,
+				D6E6D06B1DFB148C00645C01 /* historicaldataservice.hpp */,
+				D6E6D06C1DFB148C00645C01 /* inquiryservice.hpp */,
+				D6E6D06D1DFB148C00645C01 /* marketdataservice.hpp */,
+				D6E6D06E1DFB148C00645C01 /* positionservice.hpp */,
+				D6E6D06F1DFB148C00645C01 /* pricingservice.hpp */,
+				D6E6D0701DFB148C00645C01 /* products.hpp */,
+				D6E6D0711DFB148C00645C01 /* riskservice.hpp */,
+				D6E6D0721DFB148C00645C01 /* soa.hpp */,
+				D6E6D0731DFB148C00645C01 /* streamingservice.hpp */,
+				D6E6D0741DFB148C00645C01 /* tradebookingservice.hpp */,
 				D6E6D0561DFB0FE600645C01 /* main.cpp */,
+				D6AACB0F1E060E98008B9432 /* BondTradeServiceListener.hpp */,
+				D682136B1E07709000FC9681 /* BondPositionServiceListener.hpp */,
+				D682136C1E0B3EF500FC9681 /* AlgoExecutionService.hpp */,
+				D682136E1E0B722D00FC9681 /* BondMarketDataListener.hpp */,
+				D68213701E0B7F2900FC9681 /* BondAlgoStreamingService.hpp */,
+				D68213711E0B870B00FC9681 /* BondPricingListener.hpp */,
+				D68213721E0BB7E700FC9681 /* ExecutionListener.hpp */,
+				D68213731E0BB92E00FC9681 /* InquiryListener.hpp */,
+				D68213751E0BBB1300FC9681 /* PositionDataListener.hpp */,
+				D68213761E0BBCAC00FC9681 /* RiskListener.hpp */,
+				D68213771E0BBDBD00FC9681 /* StreamingListener.hpp */,
 			);
 			path = Final_Project_Mengqi_Zhang;
 			sourceTree = "<group>";
@@ -216,6 +260,8 @@
 		D6E6D05B1DFB0FE600645C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/kikizhang/lib/boost_1_62_0/;
+				LIBRARY_SEARCH_PATHS = /Users/kikizhang/lib/boost_1_62_0/libs/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +269,8 @@
 		D6E6D05C1DFB0FE600645C01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/kikizhang/lib/boost_1_62_0/;
+				LIBRARY_SEARCH_PATHS = /Users/kikizhang/lib/boost_1_62_0/libs/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +294,7 @@
 				D6E6D05C1DFB0FE600645C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
