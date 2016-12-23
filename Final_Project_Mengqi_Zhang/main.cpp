@@ -25,6 +25,7 @@
 #include "StreamingListener.hpp"
 #include "InquiryListener.hpp"
 
+
 int main()
 {
     //A.Test tradebookservice & positionservice & riskservice
